@@ -186,6 +186,17 @@ body{
       padding: 10px;
       
     }
+  }
+    @media only screen and (max-width: 950px){
+  .card-login{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .main-login{
+    flex-direction: column;
+  }
   
     .logotipo {
       justify-content: center;
