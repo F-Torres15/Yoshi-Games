@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style login.css">
-  <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style login.css" />
 </head>
 <body>
   <div class="main-login">
     <div class="left-login">
-      <h1>Faça login e venha conhecer nossa loja de Games</h1>
-      <img src="img//YOSHI GAMES.png" class="left-login-image" alt="Pessoa trabalhando">
+      <h1>Crie sua conta e aproveite nossos jogos!</h1>
+      <img src="img//YOSHI GAMES.png" class="left-login-image" alt="Cadastro de usuário" />
     </div>
     <div class="right-login">
       <div class="card-login">
-        <h1>LOGIN</h1>
+        <h1>Cadastro</h1>
         <div class="textfield">
-          <label for="usuario">Usuário</label>
-          <input type="text" name="usuario" placeholder="Usuário">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" placeholder="Digite seu nome" />
         </div>
         <div class="textfield">
-          <label for="password">Senha</label>
-          <input type="password" name="password" placeholder="Senha">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" />
         </div>
-        <button class="btn-login"><a>Login</a></button>
-        <div class="message" id="msg"></div>
+        <div class="textfield">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Crie uma senha" />
+        </div>
+        <div class="textfield">
+          <label for="confirmarSenha">Confirmar senha</label>
+          <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" />
+        </div>
+        <button class="btn-login" id="btnCadastro">Cadastrar</button>
+        <p id="mensagem-erro" style="color: red; font-size: 14px; margin-top: 10px;"></p>
+        <p class="back-login">
+        <a href="login.html">Já tem uma conta? Faça login</a>
+        </p>
       </div>
     </div>
-<!--     
-  <button id="credits-button" class="icon-button" onclick="toggleInfo('credits')">🎮</button>
-  <div id="credits">
-    <p><strong>Controles: </strong><br>
-      Use as setas para controlar<br>
-      Use "Z" para pular<br>
-      Use "X" para atacar<br>
-      Use "M" para transitar entre as fases<br>
-  </div> -->
-
   </div>
+  <script src="cadastro.js"></script>
 </body>
-<script src="login.js" ></script>
 </html>
